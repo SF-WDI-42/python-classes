@@ -110,22 +110,7 @@ Bonus: start each account with an additional `overdraft_fees` property that
 starts at zero. If a call to `withdraw` ends with the `balance` below zero
 then `overdraft_fees` should be incremented by twenty.
 
-```python
-class BankAccount():
-  def __init__(self, kind):
-    self.kind = kind
-    self.balance = 0
-    self.overdraft_fees = 0
-  
-  def deposit(self, amount):
-    self.balance += amount
-  
-  def withdraw(self, amount):
-    self.amount -= amount
-    if (self.amount < 0):
-      self.overdraft_fees += 20
-    return amount
-```
+
 
 ## Default Parameters
 Python allows us to provide default values for parameters in any function we
@@ -140,16 +125,7 @@ the distance between a point and the origin is defined as the square root of
 
 Use Python's exponent `**` operator to calculate square root. `9 ** .5 == 3.0`
 
-```
-p0 = Point()
-p2 = Point(3, 4)
 
-print(p0.distance())
-0.0
-
-print(p2.distance())
-5.0
-```
 
 ## Printing Objects
 Ever tried to have Python print an object? It's nasty. If you try to print an
